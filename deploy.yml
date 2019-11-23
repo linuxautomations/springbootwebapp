@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -19,4 +20,3 @@ spec:
         image: rkalluru/ktest:VERSION
         ports:
         - containerPort: 8080 
-        

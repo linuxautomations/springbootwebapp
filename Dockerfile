@@ -1,2 +1,3 @@
-FROM centos:7 
-RUN yum install java -y 
+FROM    centos:7 
+RUN     yum install java -y 
+

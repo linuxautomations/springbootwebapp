@@ -29,6 +29,7 @@ kind: Service
 metadata:
   name: sample-service
 spec:
+  tyoe
   ports:
     - protocol: TCP
       port: 8080

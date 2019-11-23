@@ -7,7 +7,7 @@ pipeline {
     stage('Compile Code') {
       steps {
         sh '''
-          mvn versions:set -DnewVersion=2.50.1-SNAPSHOT
+          mvn versions:set -DnewVersion=${RELEASE_VERSION}-SNAPSHOT
           mvn package 
           ls target
         '''

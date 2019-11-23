@@ -4,7 +4,7 @@ pipeline {
             }
 
   stages {
-    stage('Check files') {
+    stage('Compile Code') {
       steps {
         sh '''
           mvn package 

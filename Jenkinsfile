@@ -17,7 +17,7 @@ pipeline {
     stage('Make DOCKER IMAGE') {
       steps {
         sh '''
-          docker build --build-arg RELEASE_VERSION=${RELEASE_VERSION} -t rkalluru/ktest:v1 .
+          docker build --build-arg RELEASE_VERSION=${RELEASE_VERSION} -t rkalluru/ktest:${RELE} .
         '''
       }
     }

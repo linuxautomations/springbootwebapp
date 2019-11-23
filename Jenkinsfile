@@ -33,7 +33,18 @@ pipeline {
     }
 
     stage('Approval') {
-      
+      steps {
+        input 'Do you want to Deploy in PROD ?'
+      }
+    }
+
+    stage('Apply Kubernetes - DEV NS') {
+      steps {
+        sh '''
+          sed -i -e "s/VERSION/${RELEASE_VERSION}" deploy.yml
+          kubectl apply -f deploy.yml -n dev
+        '''
+      }
     }
 
   }

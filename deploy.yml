@@ -19,7 +19,7 @@ spec:
       - name: sample
         image: rkalluru/ktest:VERSION
         ports:
-        - containerPort: 8080 
+        - containerPort: 8080
 
 ...
 
@@ -29,7 +29,7 @@ kind: Service
 metadata:
   name: sample-service
 spec:
-  tyoe
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 8080

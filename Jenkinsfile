@@ -16,7 +16,7 @@ pipeline {
     stage('Make DOCKER IMAGE') {
       steps {
         sh '''
-          docker build -t rkalluru/ktest:v1
+          docker build -t rkalluru/ktest:v1 .
         '''
       }
     }

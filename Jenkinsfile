@@ -28,7 +28,7 @@ pipeline {
         sh '''
           sed -
           kubectl apply -f deploy.yml
-        '
+        '''
         
       }
     }

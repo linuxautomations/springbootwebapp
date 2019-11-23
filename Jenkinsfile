@@ -32,5 +32,9 @@ pipeline {
       }
     }
 
+    stage('Approval') {
+      
+    }
+
   }
 }

@@ -20,3 +20,7 @@ spec:
         image: rkalluru/ktest:VERSION
         ports:
         - containerPort: 8080 
+
+...
+
+---

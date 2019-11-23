@@ -8,6 +8,7 @@ pipeline {
       steps {
         sh '''
           mvn package 
+          ls target
         '''
       }
     }

@@ -25,7 +25,7 @@ pipeline {
 
     stage('Apply Kubernetes - DEV NS') {
       steps {
-        
+        kubectl apply -f 
       }
     }
 

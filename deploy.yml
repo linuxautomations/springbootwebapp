@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: sample
-        image: nginx:1.7.9
+        image: rkalluru/ktest:VERSION
         ports:
         - containerPort: 80

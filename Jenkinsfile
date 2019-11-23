@@ -6,7 +6,9 @@ pipeline {
   stages {
     stage('Check files') {
       steps {
-        sh 
+        sh '''
+          mvn package 
+        '''
       }
     }
     

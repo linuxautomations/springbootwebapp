@@ -6,10 +6,10 @@ pipeline {
   stages {
     stage('Check files') {
       steps {
-        sh 'ls'
+        sh 
       }
     }
     
-    
+
   }
 }

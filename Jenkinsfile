@@ -23,8 +23,10 @@ pipeline {
       }
     }
 
-    stage('Apply Kubernetes') {
-      steps
+    stage('Apply Kubernetes - DEV NS') {
+      steps {
+        
+      }
     }
 
   }

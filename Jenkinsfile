@@ -16,6 +16,8 @@ pipeline {
     stage('Make DOCKER IMAGE') {
       steps {
         sh '''
+          docker build -t rkalluru/ku
+        '''
       }
     }
 

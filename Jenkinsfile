@@ -27,7 +27,7 @@ pipeline {
       steps {
         sh '''
           sed -i -e "s/VERSION/${RELEASE_VERSION}" deploy.yml
-          kubectl apply -f deploy.yml
+          kubectl apply -f deploy.yml -n dev
         '''
       }
     }

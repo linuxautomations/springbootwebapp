@@ -26,10 +26,10 @@ pipeline {
     stage('Apply Kubernetes - DEV NS') {
       steps {
         sh '''
-        
+          sed -
+          kubectl apply -f deploy.yml
         '
-        sed -
-        kubectl apply -f deploy.yml
+        
       }
     }
 

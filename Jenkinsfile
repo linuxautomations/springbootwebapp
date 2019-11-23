@@ -14,7 +14,9 @@ pipeline {
     }
     
     stage('Make DOCKER IMAGE') {
-      steps 
+      steps {
+        sh '''
+      }
     }
 
   }

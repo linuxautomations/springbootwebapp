@@ -13,7 +13,9 @@ pipeline {
       }
     }
     
-    stage('')
+    stage('Make DOCKER IMAGE') {
+      steps 
+    }
 
   }
 }

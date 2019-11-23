@@ -26,7 +26,7 @@ pipeline {
     stage('Apply Kubernetes - DEV NS') {
       steps {
         sh '''
-          sed -i -e "s/VERSION/${RELEASE_VERSION}" deploy.yml
+          sed -i -e "s/VERSION/${RELEASE_VERSION}/" deploy.yml
           kubectl apply -f deploy.yml -n dev
         '''
       }
@@ -41,7 +41,7 @@ pipeline {
     stage('Apply Kubernetes - PROD NS') {
       steps {
         sh '''
-          sed -i -e "s/VERSION/${RELEASE_VERSION}" deploy.yml
+          sed -i -e "s/VERSION/${RELEASE_VERSION}/" deploy.yml
           kubectl apply -f deploy.yml -n dev
         '''
       }

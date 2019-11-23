@@ -23,7 +23,9 @@ pipeline {
       }
     }
 
-    stage('')
+    stage('Apply Kubernetes') {
+      steps
+    }
 
   }
 }
